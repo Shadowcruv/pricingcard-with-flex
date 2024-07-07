@@ -1,0 +1,150 @@
+.card {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 8px #888888;
+  position: relative;
+}
+
+.top-section {
+  width: 100%;
+  height: 45%;
+  padding: 12px;
+}
+
+.left-buttom, .right-buttom {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.left-buttom {
+  background-color: #2ab2af;
+}
+
+.right-buttom {
+  background-color: #42C7C4;
+}
+
+#heading {
+  margin: 19px;
+  color: #2ab2af;
+}
+
+#subheading {
+  margin-left: 19px;
+  color: #c0df34;
+}
+
+#text {
+  margin-left: 19px;
+  margin-top: 10px;
+  color: #98a6bd;
+}
+
+.left-buttom h4, .right-buttom h4 {
+  margin-top: 30px;
+  color: #e5eff5;
+  margin-bottom: 20px;
+}
+
+body {
+  padding: 20px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  color: #e5eff5;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+h3, h4, p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#price {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#detail {
+  display: inline-block;
+  font-size: 0.6rem;
+  position: relative;
+  top: -3px;
+}
+
+.price-detail {
+  color: #e5eff5;
+  margin-bottom: 25px;
+}
+
+#full {
+  color: #e5eff5;
+  font-size: 0.8rem;
+  margin-bottom: 25px;
+}
+
+button {
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #AAC62F;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: navy;
+  transform: translateY(2px);
+}
+
+.bottom-section {
+  display: flex; /* Use flexbox */
+  width: 100%;
+  height: 55%;
+  background-color: yellow;
+  flex-direction: column;
+}
+
+@media(min-width: 650px) {
+  .card {
+    height: 400px;
+    width: 500px;
+  }
+
+  .left-buttom, .right-buttom {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .bottom-section {
+  flex-direction: row;
+}
+
+}
